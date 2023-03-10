@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
@@ -43,6 +44,9 @@ public class Main extends Application {
 	private Button findBtn;
 	@FXML
     private AnchorPane root;
+	@FXML
+    private Label pathTxt = new Label("");
+	
 	Line line = new Line();
 	
 	//adding nodes to the ComboBox
@@ -105,6 +109,8 @@ public class Main extends Application {
 		
 		//for getting the path reversed
 		ArrayList<Node> path = printPath(end);
+		pathTxt.setText("");
+		pathTxt.setText("Path: " + path);
         System.out.println("Path: " + path);
         
         ArrayList<Node> draw = new ArrayList<>();

@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="root" prefHeight="444.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
+<AnchorPane fx:id="root" prefHeight="444.0" prefWidth="1134.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Main">
    <children>
-      <ComboBox fx:id="fromCombo" layoutX="811.0" layoutY="160.0" onMouseClicked="#locationsCombo" prefWidth="150.0" />
-      <ComboBox fx:id="toCombo" layoutX="811.0" layoutY="211.0" onMouseClicked="#locationsCombo" prefWidth="150.0" />
-      <Label layoutX="811.0" layoutY="143.0" text="From" />
-      <Label layoutX="811.0" layoutY="194.0" text="To" />
-      <Button fx:id="findBtn" layoutX="853.0" layoutY="277.0" mnemonicParsing="false" onAction="#Find" text="Find Path" />
+      <ComboBox fx:id="fromCombo" layoutX="811.0" layoutY="31.0" onMouseClicked="#locationsCombo" prefWidth="150.0" />
+      <ComboBox fx:id="toCombo" layoutX="811.0" layoutY="84.0" onMouseClicked="#locationsCombo" prefWidth="150.0" />
+      <Label layoutX="811.0" layoutY="14.0" text="From" />
+      <Label layoutX="811.0" layoutY="67.0" text="To" />
+      <Button fx:id="findBtn" layoutX="1016.0" layoutY="55.0" mnemonicParsing="false" onAction="#Find" text="Find Path" />
       <Pane fx:id="paneImg" layoutX="6.0" layoutY="9.0" prefHeight="426.0" prefWidth="781.0">
          <children>
             <ImageView fx:id="imgv" fitHeight="426.0" fitWidth="791.0" pickOnBounds="true" preserveRatio="true">
@@ -22,5 +22,6 @@
             </ImageView>
          </children>
       </Pane>
+      <Label fx:id="pathTxt" layoutX="797.0" layoutY="239.0" />
    </children>
 </AnchorPane>
